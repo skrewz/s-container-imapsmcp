@@ -27,16 +27,6 @@ Create a Podman secret with your IMAP credentials in `user:password` format:
 echo 'your-email@example.com:yourpassword' | podman secret create imap_userpass -
 ```
 
-Note: Passwords can contain colons (`:`). The secret is parsed by splitting on the first colon only.
-
-Create a Podman secret with your IMAP credentials in `user:password` format:
-
-```bash
-echo 'your-email@example.com:yourpassword' | podman secret create imap_userpass -
-```
-
-Note: Passwords can contain colons (`:`). The secret is parsed by splitting on the first colon only.
-
 ## Building
 
 ### Using Make
@@ -46,14 +36,6 @@ make container-build
 ```
 
 ## Running
-
-### Create Podman secret
-
-First, create the secret:
-
-```bash
-echo 'your-email@example.com:yourpassword' | podman secret create imap_userpass -
-```
 
 ### Using Make
 
