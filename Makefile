@@ -1,4 +1,4 @@
-IMAGE_NAME=imap-mcp-server
+IMAGE_NAME=s-container-imapsmcp
 SECRET_NAME=imap_userpass
 PORT=2757
 
